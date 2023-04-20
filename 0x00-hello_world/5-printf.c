@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-/** 
- * Main : entry point
- * Description: print using printf
- * Return: 0 
-*/
+/**
+ * main - main function
+ * Description: use printf to print a string
+ * Return: 0
+ */
 
 int main(void)
 {
