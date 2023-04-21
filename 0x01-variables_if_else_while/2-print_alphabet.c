@@ -3,11 +3,11 @@
 /**
  * main - entry point
  * description: print alphabet
- * return:0
+ * Return: 0 (success)
  */
 int main(void)
 {
-	char a='a';
+	char a ='a';
 
 	while (a <= 'z')
 	{
