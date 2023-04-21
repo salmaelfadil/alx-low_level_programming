@@ -2,8 +2,9 @@
 #include <unistd.h>
 /**
  * main - main entry function
- * description: prints string
- * return : 1
+ * Description: prints string
+ *
+ * Return : 1
  */
 int main(void)
 {
