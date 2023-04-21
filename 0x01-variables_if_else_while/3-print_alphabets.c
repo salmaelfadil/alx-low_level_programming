@@ -7,9 +7,10 @@
  * Return: 0 (success)
  */
 int main(void)
-{ 
+{
 	char a = 'a';
-	while (a <= 'z') 
+
+	while (a <= 'z')
 	{
 		putchar(a);
 		a++;
@@ -18,11 +19,10 @@ int main(void)
 	a = 'A';
 	
 	while (a <= 'Z')
-	{ 
+	{
 		putchar(a);
 		a++;
 	}
 	putchar('\n');
 	return (0);
-
 }
