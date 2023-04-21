@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - main entry function
  * description: prints string
- * return : 0
+ * return : 1
  */
 int main(void)
 {
