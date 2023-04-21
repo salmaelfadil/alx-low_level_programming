@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - main entry poing
- * description: prints last digit 
+ * description: prints last digit
  * Return: 0
  */
 int main(void)
