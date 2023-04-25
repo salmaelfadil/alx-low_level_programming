@@ -13,9 +13,10 @@ int main(void)
 
 	while (sum < 4000000)
 	{
-		sum += f1 + f2;
-		f1 += 2;
-		f2 += 2;
+		f2 += f1;
+		if (f1 % 2 == 0)
+			sum += f1;
+
 		i++;
 	}
 
