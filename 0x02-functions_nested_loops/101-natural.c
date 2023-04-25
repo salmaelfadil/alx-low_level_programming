@@ -14,7 +14,10 @@ int main(void)
 	while (mul < 1024)
 	{
 		if ((mul % 3) == 0 || (mul % 5) == 0)
-			sum +=1;
+		{
+			sum += 1;
+		}
+		mul += 1;
 	}
 
 	printf("%d\n", sum);
