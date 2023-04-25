@@ -1,37 +1,24 @@
 #include "main.h"
 /**
  * print_times_table - print times table from 0
- * @n: the number up untill times table will be printed
+ * @n: the value of time table
  *
- * return: voidl
+ * return: void
  */
 void print_times_table(int n)
 {
 	int i, j, m;
-	
-	for (i = 0; i < n; i++)
+
+	if (n >= 0 && n <= 15)
 	{
-		for (j = 0; j < n; j++)
+		for (i = 0; i <= n; i++)
 		{
-			m = i * j;
-			if (m < 10)
+			for (j = 0, j <=n; j++)
 			{
-				if (j != 0)
-				{
-				       	_putchar(' ');
-				       	_putchar(' ');
-				}
-				_putchar(m + '0');
+				_putchar(',');
+				_putchar(' ');
+
+				m = i * j;
 			}
-			else
-			{
-			       	_putchar(' ');
-                                _putchar((m / 10) + '0');
-                                _putchar((m % 10) + '0');
-                        }
-			if (j != n)
-			       	_putchar(',');
-		}
-		_putchar('\n');
+		}	
 	}
-}
