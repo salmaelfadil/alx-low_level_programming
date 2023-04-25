@@ -2,17 +2,18 @@
 /**
  * main - print fibonnaci sequence with even num
  *
- * return: 0;
+ * return: 0 Always
  */
 int main(void)
 {
-	long i = 0;
-	long j = 2;
+	int i = 0;
+	long f1 = 0;
+	long f2 = 2;
 	long sum;
 
 	while (sum < 4000000)
 	{
-		sum = i + j;
+		sum += f1 + f2;
 		i += 2;
 		j += 2;
 	}
