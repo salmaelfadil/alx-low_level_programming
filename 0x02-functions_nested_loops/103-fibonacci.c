@@ -2,10 +2,11 @@
 /**
  * main - print fibonnaci sequence with even num
  *
- * return: 0 Always
+ * Return: 0 Always
  */
 int main(void)
 {
+	int i = 0;
 	long f1 = 0;
 	long f2 = 2;
 	long sum;
@@ -15,9 +16,9 @@ int main(void)
 		sum += f1 + f2;
 		f1 += 2;
 		f2 += 2;
+		i++;
 	}
 
 	printf("%ld\n", sum);
-	
 	return (0);
 }
