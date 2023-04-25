@@ -11,5 +11,5 @@ int add(int i1, int i2)
 {
 	int numb = i1 + i2;
 
-	_putchar(numb);
+	return (numb);
 }
