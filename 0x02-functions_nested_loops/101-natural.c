@@ -15,7 +15,7 @@ int main(void)
 	{
 		if ((mul % 3) == 0 || (mul % 5) == 0)
 		{
-			sum += 1;
+			sum += mul;
 		}
 		mul += 1;
 	}
