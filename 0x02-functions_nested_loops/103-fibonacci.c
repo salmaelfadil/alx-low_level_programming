@@ -13,8 +13,8 @@ int main(void)
 	while (sum < 4000000)
 	{
 		sum += f1 + f2;
-		i += 2;
-		j += 2;
+		f1 += 2;
+		f2 += 2;
 	}
 
 	printf("%ld\n", sum);
