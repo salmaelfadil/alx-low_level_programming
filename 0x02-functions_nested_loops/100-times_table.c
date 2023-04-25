@@ -21,7 +21,7 @@ void print_times_table(int n)
 				       	_putchar(' ');
 				       	_putchar(' ');
 				}
-				_putchar(m + '0);
+				_putchar(m + '0');
 			}
 			else
 			{
@@ -29,7 +29,7 @@ void print_times_table(int n)
                                 _putchar((m / 10) + '0');
                                 _putchar((m % 10) + '0');
                         }
-			if (j != 9)
+			if (j != n)
 			       	_putchar(',');
 		}
 		_putchar('\n');
