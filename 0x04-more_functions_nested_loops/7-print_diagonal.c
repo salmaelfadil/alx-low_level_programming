@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_diagonal - print diagonal line
- * @n: number of times \ would be printed
- * 
- * Return: void
+ * print_diagonal - prints a diagonal line.
+ * @n: number of \.
+ *
+ * Return: void.
  */
 void print_diagonal(int n)
 {
@@ -13,7 +13,7 @@ void print_diagonal(int n)
 	{
 		_putchar('\n');
 	}
-	else 
+	else
 	{
 		for (i = 0; i < n; i++)
 		{
@@ -22,7 +22,7 @@ void print_diagonal(int n)
 				_putchar(' ');
 			}
 			_putchar(92);
-			-putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
