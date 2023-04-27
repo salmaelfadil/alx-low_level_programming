@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - prints numbers from 1 to 100 except multiples of 3 and 5 
+ * main - prints numbers from 1 to 100 except multiples of 3 and 5
  *
  * Return: 0 Success
  */
