@@ -7,8 +7,7 @@
  */
 void rev_string(char *s)
 {
-	int i, j;
-	char k [100];
+	int i, j, k;
 
 	i = 0;
 	j = 0;
@@ -18,9 +17,8 @@ void rev_string(char *s)
 		i++;
 	}
 
-	while (i--)
+	while (j > i)
 	{
-		k[j]= s[i];
-		j++;
+		k = s[i];
 	}
 }
