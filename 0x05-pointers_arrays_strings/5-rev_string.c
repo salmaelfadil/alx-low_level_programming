@@ -7,16 +7,17 @@
  */
 void rev_string(char *s)
 {
-	int i;
+	int i, j;
 
 	i = 0;
+	j = 0;
 
 	while (s[i])
 	{
 		i++;
 	}
 
-	for (; i != 0; i--)
+	while (i--)
 	{
 		char k[] = s[i];
 	}
