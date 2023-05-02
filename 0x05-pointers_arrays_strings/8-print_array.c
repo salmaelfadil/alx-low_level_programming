@@ -1,0 +1,18 @@
+#include "main.h"
+/**
+ * print_array - print array of n elements
+ * @a: array of ints
+ * @n: number of elements
+ *
+ * Return: void
+ */
+void print_array(int *a, int n)
+{
+	int i = 0;
+
+	for (; i < n; i++)
+	{
+		printf("%d, ", a[i]);
+	}
+	printf("\n");
+}
