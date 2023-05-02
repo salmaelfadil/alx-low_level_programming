@@ -7,10 +7,10 @@
  */
 void rev_string(char *s)
 {
-	int i = 0, j =0;
+	int i = 0, j = 0;
 	char a[10000];
 
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		a[i] = s[i];
 		i++;
@@ -24,5 +24,5 @@ void rev_string(char *s)
 		i--;
 		j++;
 	}
-	s[j++] ='\0';
+	s[j++] = '\0';
 }
