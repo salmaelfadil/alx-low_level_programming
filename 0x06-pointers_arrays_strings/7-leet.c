@@ -21,7 +21,7 @@ char *leet(char *s)
 			s[i] = 3;
 		}
 
-		else if (s[i] == 97 || s[i] == 111)
+		else if (s[i] == 79 || s[i] == 111)
 		{
 			s[i] = 0;
 		}
