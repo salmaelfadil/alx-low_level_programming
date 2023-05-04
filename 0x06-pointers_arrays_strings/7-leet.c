@@ -7,17 +7,15 @@
  */
 char *leet(char *s)
 {
-	int i = 0, j = 0;
+	int i = 0;
 	char letters[] = "aAeEoOtTlL";
 	char nums[] = "4433007711";
 
 	for (; s[i] != '\0'; i++)
 	{
-		for (; j <= 10; j++)
+		if (s[i] == letters[i])
 		{
-			if (s[i] == letters[j])
-			{	s[i] = nums[i];
-			}
+			s[i] = nums[i];
 		}
 	}
 	return (s);
