@@ -1,15 +1,15 @@
 #include "main.h"
 /**
  * _strcmp - compares two strings
- * s1: string one
- * s2: string two
+ * @s1: string one
+ * @s2: string two
  *
- * Return: 0 if strings are equal
+ * Return: int the difference between strings
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int cmp, i = 0, j = 0;
+	int i = 0, j = 0;
 
 	while (s1[i] != '\0')
 	{
@@ -21,7 +21,5 @@ int _strcmp(char *s1, char *s2)
 		j++;
 	}
 
-	cmp = i - j;
-
-	return (cmp);
+	return ((i - j));
 }
