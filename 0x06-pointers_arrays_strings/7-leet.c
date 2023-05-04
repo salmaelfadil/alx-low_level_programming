@@ -7,35 +7,18 @@
  */
 char *leet(char *s)
 {
-	int i = 0;
+	int i = 0, j = 0;
+	char letters[] = "aAeEoOtTlL";
+	char nums[] = "4433007711";
 
 	for (; s[i] != '\0'; i++)
 	{
-		if (s[i] == 65 || s[i] == 97)
+		for (; j < 10; j++)
 		{
-			s[i] = 4;
-		}
-
-		else if (s[i] == 69 || s[i] == 101)
-		{
-			s[i] = 3;
-		}
-
-		else if (s[i] == 79 || s[i] == 111)
-		{
-			s[i] = 0;
-		}
-
-		else if (s[i] == 84 || s[i] == 116)
-		{
-			s[i] = 7;
-		}
-
-		else if (s[i] == 76 || s[i] == 108)
-		{
-			s[i] = 1;
+			if (s[i] == letters[j])
+			{	s[i] = nums[i];
+			}
 		}
 	}
-
 	return (s);
 }
