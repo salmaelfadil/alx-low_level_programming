@@ -9,9 +9,9 @@ char *rot13(char *s)
 {
 	int i = 0;
 
-	for (; s[i] !='\0'; i++)
+	for (; s[i] != i'\0'; i++)
 	{
-		if (s[i] >= 65 && s[i] < 91 || s[i] >= 97 && s[i] < 123)
+		if (s[i] >= 'A' && s[i] < 'Z' || s[i] >= 'a' && s[i] < 'z')
 		{
 			s[i] = s[i] + 13;
 		}
