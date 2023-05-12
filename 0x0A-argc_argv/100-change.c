@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int i = 0, count = 0;
 	int rem;
 
-	coins[] = {25, 10, 5, 2, 1};
+	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -22,15 +22,12 @@ int main(int argc, char *argv[])
 
 	rem = atoi(argv[1]);
 
-	while (rem >= 1)
+	for (; i < sizeof(coins) && rem >= 1; i++)
 	{
-		for (; i < sizeof(coins); i++)
+		while (rem >= coins[i])
 		{
-			if (rem >= coins[i])
-			{
-				count++;
-				rem -= coins[i];
-			}
+			count++;
+			rem -= coins[i];
 		}
 	}
 	printf("%d\n", count);
