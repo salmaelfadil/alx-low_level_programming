@@ -30,6 +30,6 @@ int main(int argc, char *argv[])
 			rem -= coins[i];
 		}
 	}
-	printf("%d\n", count);
+	printf("%i\n", count);
 	return (0);
 }
