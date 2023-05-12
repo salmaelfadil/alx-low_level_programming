@@ -9,9 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 0, count = 0;
-	int rem;
-
+	int i = 0, count = 0, rem;
 	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
@@ -28,7 +26,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (; i < sizeof(coins) && rem >= 0; i++)
+	for (; i < 5 && rem >= 0; i++)
 	{
 		while (rem >= coins[i])
 		{
