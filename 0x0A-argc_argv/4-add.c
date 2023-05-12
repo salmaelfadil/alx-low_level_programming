@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - adds two positive numbers
  * @argc: argument count
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 
 	for (; i < argc; i++)
 	{
-		if (argv[i] > '9' || argv[i] < '0')
+		if (!isdigit(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
