@@ -22,6 +22,12 @@ int main(int argc, char *argv[])
 
 	rem = atoi(argv[1]);
 
+	if (rem == 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+
 	for (; i < sizeof(coins) && rem >= 1; i++)
 	{
 		while (rem >= coins[i])
