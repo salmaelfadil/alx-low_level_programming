@@ -17,7 +17,7 @@ char *argstostr(int ac, char **av)
 	
 	for (; i < ac; i++)
 	{
-		while (a[i][j])
+		while (av[i][j])
 		{
 			len++;
 			j++;
