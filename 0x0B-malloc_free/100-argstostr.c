@@ -26,10 +26,10 @@ char *argstostr(int ac, char **av)
 	if (a == NULL)
 		return (NULL);
 
-	for (i = 0; i <= ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
-			a[i] = av[i][j];
+			a[i + 1] = av[i][j];
 
 		a[i + 1] = '\n';
 	}
