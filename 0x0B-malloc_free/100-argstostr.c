@@ -34,7 +34,7 @@ char *argstostr(int ac, char **av)
 		a[i + 1] = '\n';
 	}
 
-	a[i] = '\0';
+	a[len] = '\0';
 
 	return (a);
 }
