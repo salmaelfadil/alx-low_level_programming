@@ -16,7 +16,7 @@ char **strtow(char *str)
 
 	while (str[i])
 	{
-		if (str[i] == " ")
+		if (*str == " ")
 		{
 			i++;
 
