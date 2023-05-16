@@ -9,28 +9,30 @@
 char **strtow(char *str)
 {
 	int i = 0, j = 0, len;
-	char *a;
+	char **a;
 
 	if (str == NULL)
 		return (NULL);
 
 	while (str[i])
 	{
-		while (str[i][j])
+		if (str[i] == " ")
 		{
-			len++;
-			j++;
+			i++;
+
 		}
-		i++;
-		len++;
+		else
+		{	i++;
+			len++;
+		}
 	}
 
-	a = malloc(sizeof(char) * len);
+	a = malloc(sizeof(char) * (len + 1));
 
-	if (a == NULL)
+	if (a == NULL || len == 0)
 		return (NULL);
 
-	for (i = 0; i != 32; i++)
+	for (i = 0; i < len; i++)
 	{
 		for (j = 0; str[i][j]; j++)
 			a[i] = str[i][j];
