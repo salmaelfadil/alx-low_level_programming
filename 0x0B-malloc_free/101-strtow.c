@@ -14,11 +14,15 @@ char **strtow(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	while (str[i][j])
+	while (str[i])
 	{
-		len++;
+		while (str[i][j])
+		{
+			len++;
+			j++;
+		}
 		i++;
-		j++;
+		len++;
 	}
 
 	a = malloc(sizeof(char) * len);
