@@ -10,7 +10,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *ptr;
+	char *ptr;
 	unsigned int i = 0;
 
 	if (nmemb == 0 || size == 0)
@@ -23,6 +23,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	for (; i < (nmemb * size); i++)
 		ptr[i] = 0;
-
-return (ptr);
+	
+	return (ptr);
 }
