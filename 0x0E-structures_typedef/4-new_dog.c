@@ -12,7 +12,7 @@ int len(char *s)
 
 	while(s[l])
 		l++;
-	return (l)
+	return (l);
 }
 /**
  * new_dog -- function that creates a new dog
