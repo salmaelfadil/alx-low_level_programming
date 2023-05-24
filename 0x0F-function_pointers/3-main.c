@@ -9,6 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int (*f)(int, int);
+	int result;
 
 	if (argc != 4)
 	{
@@ -24,7 +25,9 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	printf("%d\n", f(atoi(argv[1]), atoi(argv[3])));
+	result = f(atoi(argv[1]), atoi(argv[3]));
+
+	printf("%d\n", result);
 
 	return (0);
 }
