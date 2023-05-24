@@ -18,7 +18,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 
 	int i = 0;
-	
+
 	for (; ops[i].op; i++)
 	{
 		if (strcmp(s, ops[i].op) == 0)
