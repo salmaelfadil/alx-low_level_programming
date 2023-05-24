@@ -21,7 +21,7 @@ int (*get_op_func(char *s))(int, int)
 
 	if (s != NULL)
 	{
-		for (; ops[i]; i++)
+		for (; ops[i].op; i++)
 		{
 			if (strcmp(s, ops[i].op) == 0)
 				return (ops[i].f);
