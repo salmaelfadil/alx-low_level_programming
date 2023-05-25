@@ -37,10 +37,10 @@ void print_all(const char * const format, ...)
 					i++;
 					continue;
 			}
+			if (format[i + 1] != '\0')
+				printf(", ");
+			i++;
 		}
-		if (format[i + 1] != '\0')
-			printf(", ");
-		i++;
 	}
 	printf("\n");
 	va_end(list);
