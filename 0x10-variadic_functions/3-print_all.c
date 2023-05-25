@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 /**
- * print_all -- function that prints anything
- * @format: list of all types of arguments
+ * print_all - prints all arguments
+ * @format: list oftypes of arguments
  *
  * Return: void
  */
@@ -13,7 +13,7 @@ void print_all(const char * const format, ...)
 
 	va_start(list, format);
 
-	while (format != NULL)
+	if (format != NULL)
 	{
 		while (format[i] != '\0')
 		{
@@ -22,26 +22,24 @@ void print_all(const char * const format, ...)
 				case 'c':
 					printf("%c", va_arg(list, int));
 					break;
-				case 'i':
-					printf("%i", va_arg(list, int));
 				case 'f':
 					printf("%f", va_arg(list, double));
 					break;
 				case 's':
-					s = va_arg(list, char*);
+					s = va_arg(list, char *);
 					if (s == NULL)
 						printf("(nil)");
 					printf("%s", s);
 					break;
 				default:
-					i++;
-					continue;
+					break;
 			}
-			if (format[i + 1] != '\0')
+			if (format [i + 1] != '\0')
 				printf(", ");
 			i++;
 		}
+		printf("\n");
+		va_end(list);
 	}
-	printf("\n");
-	va_end(list);
+
 }
