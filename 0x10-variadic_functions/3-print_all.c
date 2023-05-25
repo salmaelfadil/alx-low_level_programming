@@ -35,7 +35,7 @@ void print_all(const char * const format, ...)
 					i++;
 					continue;
 			}
-			printf(", ");
+			printf(",");
 			i++;
 		}
 		printf("\n");
