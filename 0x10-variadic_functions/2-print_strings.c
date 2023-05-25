@@ -8,9 +8,9 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i = 0;
-	bool flag = true;
 	va_list sp;
+	unsigned int i;
+	bool flag = true;
 	char *s;
 
 	va_start(sp, n);
@@ -18,7 +18,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	if (separator == NULL)
 		flag = false;
 
-	for (; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		s = va_arg(sp, char*);
 
