@@ -10,7 +10,7 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *s;
 	va_list list;
-	bool flag;
+	bool flag = false;
 
 	va_start(list, format);
 
