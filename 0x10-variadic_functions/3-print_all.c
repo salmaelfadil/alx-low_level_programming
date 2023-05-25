@@ -31,11 +31,8 @@ void print_all(const char * const format, ...)
 						s = "(nil)";
 					printf("%s", s);
 					break;
-				default:
-					i++;
-					continue;
 			}
-			printf(",");
+			printf(", ");
 			i++;
 		}
 		printf("\n");
