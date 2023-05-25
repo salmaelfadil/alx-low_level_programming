@@ -24,6 +24,7 @@ void print_all(const char * const format, ...)
 				printf("%i", va_arg(list, int));
 			case 'f':
 				printf("%f", va_arg(list, double));
+				break;
 			case 's':
 				s = va_arg(list, char*);
 				if (s == NULL)
