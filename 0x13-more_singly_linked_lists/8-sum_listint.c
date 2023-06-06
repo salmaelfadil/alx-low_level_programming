@@ -3,11 +3,11 @@
  * sum_listint -- returns sum of all data in list
  * @head: head of list
  *
- * Returns: sum
+ * Return: sum
  */
 int sum_listint(listint_t *head)
 {
-	unsigned int sum;
+	int sum;
 
 	if (head == NULL)
 		return (0);
