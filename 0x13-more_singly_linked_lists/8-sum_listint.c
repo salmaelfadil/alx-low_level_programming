@@ -3,7 +3,7 @@
  * sum_listint -- returns sum of all data in list
  * @head: head of list
  *
- * Returin: sum
+ * Return: sum
  */
 int sum_listint(listint_t *head)
 {
