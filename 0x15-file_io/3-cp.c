@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int f1, f2, w, r, c1, c2;
+	int f1, f2, r, c1, c2;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -23,8 +23,11 @@ int main(int argc, char *argv[])
 	if (f2 == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]), exit(99);
 	while ((r = read(f1, buffer, 1024)) > 0)
-		if ((w = write(f2, buffer, r)) != r)
-				dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]), exit(99);
+		if (write(f2, buffer, r) != r)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
+			exit(99);
+		}
 	if (r == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
