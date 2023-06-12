@@ -32,8 +32,8 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	c1 == close(f1);
-	c2 == close(f2);
+	c1 = close(f1);
+	c2 = close(f2);
 	if (c1 == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f1), exit(100);
 	if (c2 == -1)
