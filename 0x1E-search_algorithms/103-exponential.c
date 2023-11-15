@@ -30,11 +30,11 @@ int exponential_search(int *array, size_t size, int value)
 
 	for (; i < size && array[i] < value; i = i * 2)
 	{
-		printf("Value checked[%ld] = [%d]\n", i, array[i]);
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 		if (array[i] == value)
 			return (i);
 	}
-	printf("Value found between indexes [%ld] and [%ld]\n", i / 2, size - 1);
+	printf("Value found between indexes [%ld] and [%ld]\n", i / 2, i);
 	return (binary_search_recursive(array, i / 2, min(i, size - 1), value));
 }
 /**
