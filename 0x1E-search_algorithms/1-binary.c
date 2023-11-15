@@ -28,9 +28,9 @@ int binary_search_recursive(int *array, size_t low, size_t high, int value)
 		size_t i = low;
 
 		printf("Searching in array: ");
-		for (; i <= high; i++)
+		for (; i < high; i++)
 			printf("%d, ", array[i]);
-		printf("\n");
+		printf("%d\n", array[i]);
 		if (array[mid] == value)
 			return (mid);
 
