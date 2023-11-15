@@ -34,7 +34,8 @@ int exponential_search(int *array, size_t size, int value)
 		if (array[i] == value)
 			return (i);
 	}
-	printf("Value found between indexes [%ld] and [%ld]\n", i / 2, min(i, size - 1));
+	printf("Value found between indexes [%ld] and [%ld]\n", i / 2,
+			min(i, size - 1));
 	return (binary_search_recursive(array, i / 2, min(i, size - 1), value));
 }
 /**
