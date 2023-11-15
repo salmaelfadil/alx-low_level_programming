@@ -24,18 +24,19 @@ int advanced_binary_rec(int *array, size_t low, size_t high, int value)
 {
 	if (high >= low)
 	{
-		int mid = low + (high - low) / 2;
+		size_t mid = low + (high - low) / 2;
 		size_t i = low;
 
 		printf("Searching in array: ");
 		for (; i < high; i++)
 			printf("%d, ", array[i]);
 		printf("%d\n", array[i]);
-		if (array[mid] == value)
+		if (array[mid] == value && (mid == low ||
+					array[mid - 1] != value))
 			return (mid);
 
-		if (array[mid] > value)
-			return (advanced_binary_rec(array, low, mid - 1, value));
+		if (array[mid] >= value)
+			return (advanced_binary_rec(array, low, mid, value));
 
 		return (advanced_binary_rec(array, mid + 1, high, value));
 	}
