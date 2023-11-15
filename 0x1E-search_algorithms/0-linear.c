@@ -1,6 +1,6 @@
 #include "search_algos.h"
 /**
- * linear_search -- uses linear search to find value
+ * linear_search - uses linear search to find value
  * @array: pointer to the first element of the array
  * @size: size of the array
  * @value: value to search for
@@ -23,7 +23,6 @@ int linear_search(int *array, size_t size, int value)
 
         if (array[i] == value)
         {
-            //printf("Found %i at index: %zu", value, i);
             return(i);
         }
     }
